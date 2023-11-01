@@ -1,0 +1,12 @@
+.container {
+  border: solid black 2px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.25s;
+  overflow: hidden;
+}
+.container:hover {
+  transform: scale(2.1);
+}

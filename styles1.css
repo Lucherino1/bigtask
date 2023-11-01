@@ -1,0 +1,32 @@
+button {
+  color: hsl(210, 82%, 51%);
+  background-color: #ecf5ff;
+  border: solid hsl(210, 82%, 51%) 1px;
+  position: relative;
+}
+
+button:hover {
+  background-color: #409eff;
+  transition: 5ms;
+}
+button:focus::after {
+  content: "XXX";
+}
+button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+button:active::after {
+  content: " MaXXX";
+}
+button::after {
+  content: " ";
+  background-color: rgb(229, 63, 22);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  font-size: 500%;
+}
